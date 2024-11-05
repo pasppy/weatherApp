@@ -1,1 +1,5 @@
-# use it to make files ignored while staging  just use file names and save this file
+# use .gitignore to make files ignored while staging  just use file names and save this file
+
+
+# use git log --oneline to see the versions or checkpoints
+
