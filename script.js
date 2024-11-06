@@ -2,8 +2,8 @@ function kelvinToCelcius(kelvin) {
     return Math.round(kelvin - 273.15);
 }
 
-function mpsTomph(data) {
-    return Math.round(data / 0.477);
+function mpsTokmph(data) {
+    return Math.round(data * 3.6);
 }
 
 let iconCode = "";
@@ -50,7 +50,7 @@ function fetchWeatherData() {
             maxTemp.innerText = kelvinToCelcius(data.main.temp_max)
             humidity.innerText = data.main.humidity;
             pressure.innerText = data.main.pressure;
-            windSpeed.innerText = mpsTomph(data.wind.speed);
+            windSpeed.innerText = mpsTokmph(data.wind.speed);
 
             document.getElementById("no-info").style.display = "none";
 
