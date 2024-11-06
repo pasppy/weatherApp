@@ -42,22 +42,22 @@
 
 <body class="bg-[#C3E4F3] relative">
     <!-- search city -->
-    <div id="search-container" class="fixed z-50 top-0 right-0 flex justify-end mb-8">
+    <div id="search-container" class="fixed z-50 top-0 right-0 flex justify-end  mb-8">
         <div id="search-box" class="relative m-6 flex gap-2 items-center">
             <input type="text" placeholder="Search City" autofocus id="search"
-                class=" px-4 min-w-44 w-[20vw] max-w-64 border-2 h-8 rounded-[40px] border-slate-400 focus:outline-slate-600">
+                class="text-[clamp(12px,1vw,64px)] px-4 min-w-44 w-[20vw]  border-2 h-[4vh] rounded-[40px]  border-slate-400 focus:outline-slate-600">
             <div id="invalid-city-error" class="hidden text-red-600 absolute left-2 bottom-[-24px]">*Invalid City Name
             </div>
             <button id="search-btn"
-                class="p-3 flex justify-center items-center rounded-[50%] border-2 w-8 h-8 border-slate-400 hover:border-slate-600"><i
-                    class="ri-search-2-line text-slate-800"></i> </button>
+                class="p-3  flex justify-center items-center rounded-[50%] border-2 w-[4vh] h-[4vh] border-slate-400 hover:border-slate-600"><i
+                    class="ri-search-2-line text-[clamp(12px,1vw,64px)] text-slate-800"></i> </button>
         </div>
 
     </div>
     <div id="page1" class="flex justify-center items-start sm:items-center h-[100vh] w-[100vw]">
         <!-- weather info -->
         <div id="container"
-            class="relative mt-40 md:mt-14 w-[80vw] min-h-[300px] max-w-[900px] h-[30vh] md:h-[50vh]   rounded-md "
+            class="relative mt-40 md:mt-14 w-[80vw] min-h-[300px] max-w-[800px] h-[30vh] md:h-[50vh]   rounded-md "
             style="background-image: linear-gradient(to right bottom, #259ed9, #48aade, #63b7e2, #7ac3e7, #91cfec);">
 
             <div id="loader"
