@@ -23,7 +23,7 @@ let input = document.getElementById("search");
 
 let loader = document.getElementById("loader");
 
-document.querySelector("#search-btn").addEventListener("click", () => {
+function fetchWeatherData() {
     loader.style.opacity = 1;
     cityInput = input.value.trim();
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=b4a5a8a1942f098e30cea98fe2b1a6ef`)
@@ -63,6 +63,11 @@ document.querySelector("#search-btn").addEventListener("click", () => {
             loader.style.opacity = 0;
 
         });
+}
+
+document.querySelector("#search-btn").addEventListener("click", fetchWeatherData)
+document.body.addEventListener("keydown", (e) => {
+    if (document.activeElement === input && e.key == "Enter") fetchWeatherData()
 })
 
 
