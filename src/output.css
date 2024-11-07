@@ -988,3 +988,10 @@ video {
     padding-right: 2.5rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
