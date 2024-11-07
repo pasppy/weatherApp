@@ -676,6 +676,39 @@ video {
   height: 100%;
 }
 
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[3\] {
+  height: 3;
+}
+
+.h-\[3v\] {
+  height: 3v;
+}
+
+.h-\[3vh\] {
+  height: 3vh;
+}
+
+.h-\[3vp\] {
+  height: 3vp;
+}
+
+.h-\[3vw\] {
+  height: 3vw;
+}
+
+.h-\[16px\] {
+  height: 16px;
+}
+
 .min-h-\[24px\] {
   min-height: 24px;
 }
@@ -726,6 +759,31 @@ video {
 
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-\[3vw\] {
+  width: 3vw;
+}
+
+.w-\[vw\] {
+  width: vw;
+}
+
+.w-\[6vw\] {
+  width: 6vw;
+}
+
+.w-\[4vw\] {
+  width: 4vw;
 }
 
 .min-w-44 {
@@ -833,6 +891,26 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .text-\[clamp\(12px\2c 1vw\2c 64px\)\] {
   font-size: clamp(12px,1vw,64px);
 }
@@ -903,5 +981,10 @@ video {
 
   .md\:grid-cols-\[50\%_50\%\] {
     grid-template-columns: 50% 50%;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
