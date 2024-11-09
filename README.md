@@ -5,7 +5,7 @@
 
 It is a simple yet useful weather app to get the latest weather updates on the go.
 
-## Installation
+## Setup
 Install the repository locally on your machine using the code button.
 
 Then open the folder in your code editor and open the terminal and install dev dependencies via npm using given command.
